@@ -1,0 +1,39 @@
+[general]
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url=http://www.baidu.com/
+server_check_url=http://www.gstatic.com/generate_204
+
+[dns]
+server=119.29.29.29
+server=223.5.5.5
+server=1.0.0.1
+server=8.8.8.8
+
+[policy]
+static=Policy, SSID, AutoTest, Fallback, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
+available=AutoTest, 🇨🇳, 🇨🇳, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+available=Fallback, 🇨🇳, 🇨🇳, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+static=Final, Policy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=ForeignMedia, Policy, AutoTest, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+static=GlobalMedia, Policy, AutoTest, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+
+[server_remote]
+
+[filter_remote]
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=Hijacking, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/China.list, tag=China, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Advertising.list, tag=Ads, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Global.list, tag=Globa, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/StreamingMedia/Streaming.list, tag=Streaming, update-interval=86400, opt-parser=false, enabled=true
+
+[rewrite_remote]
+
+[server_local]
+
+[filter_local]
+FINAL,Final
+
+[rewrite_local]
+
+[mitm]
