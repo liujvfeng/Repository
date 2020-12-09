@@ -21,7 +21,7 @@ skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashly
 PROXY = select,AutoTest
 AutoTest = url-test,DIRECT,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
 Mr.SSID = ssid,default = AutoTest, cellular = AutoTest, "Mr" = DIRECT
-Globa = select,Media,DIRECT
+Streaming = select,DIRECT
 FINAL = select,PROXY
 
 [Rule]
