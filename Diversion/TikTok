@@ -1,0 +1,2 @@
+hostname = *.tiktokv.com,*.byteoversea.com
+(?<=&mcc_mnc=)46 url 307 44
