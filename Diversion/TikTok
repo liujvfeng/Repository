@@ -1,2 +1,8 @@
+#TikTok
 hostname = *.tiktokv.com,*.byteoversea.com
-(?<=&mcc_mnc=)46 url 307 44
+(?<=&mcc_mnc=)4 url 307 2
+#淘宝历史价格
+#^http://.+/amdc/mobileDispatch url script-request-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+#^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js
+#京东历史价格
+#^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
