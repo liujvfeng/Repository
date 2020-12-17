@@ -11,7 +11,7 @@ server=1.0.0.1
 server=8.8.8.8
 
 [policy]
-static=Policy, SSID, AutoTest, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
+static=Policy, SSID, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 ssid =SSID, Policy, Policy,Mr: direct,Mr_5G: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static=Streaming, Policy, AutoTest, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
 static=Final, Policy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Bypass.png
