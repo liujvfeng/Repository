@@ -1,5 +1,0 @@
-(^https?:\/\/[\w-]+\.tiktokv.com\/.+&.+)(\d{2}\.3\.\d)(.+) url 307 $118.0$3
-^https?:\/\/[\w-]+\.(amemv|musical|snssdk|tiktokv)\.(com|ly)\/(api|motor)\/ad\/ url reject
-^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ url reject-img
-hostname = *.tiktokv.com,*.byteoversea.com
-(?<=&mcc_mnc=)4 url 307 2
