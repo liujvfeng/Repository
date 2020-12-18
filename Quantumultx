@@ -11,8 +11,8 @@ server=1.0.0.1
 server=8.8.8.8
 
 [policy]
-static=Proxies, DIRECT, 🇭🇰 , 🇭🇰
-ssid =SSID, Policy, Policy,Mr: direct,Mr_5G: direct
+static=Proxies, 🇭🇰 , 🇭🇰
+ssid =SSID, Proxies, Proxies,Mr: direct,Mr_5G: direct
 static=Domestic, DIRECT, Proxies
 static=Scholar, DIRECT, Proxies
 static=Others, Proxies, DIRECT
