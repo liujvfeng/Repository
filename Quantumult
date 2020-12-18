@@ -83,6 +83,11 @@ https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRl
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvQXBwbGUubGlzdA&group=QXBwbGU, tag=Apple, enabled=true
 	
 [rewrite_remote]
+https://gitee.com/bp233/script/raw/master/TikTok.quanx, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+https://gitee.com/bp233/script/raw/master/YouTubeADS.quanx, tag=YouTube, update-interval=86400, opt-parser=false, enabled=true
+https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=Boxjs, update-interval=86400, opt-parser=false, enabled=true
+https://gitee.com/bp233/script/raw/master/General.conf, tag=Rewrite, update-interval=86400, opt-parser=false, enabled=true
+https://gitee.com/bp233/script/raw/master/Abdlook.conf, tag=Adve, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
 
