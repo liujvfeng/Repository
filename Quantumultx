@@ -11,7 +11,7 @@ server=1.0.0.1
 server=8.8.8.8
 
 [policy]
-static=Proxies, 🇭🇰 , 🇭🇰
+static=Proxies, SSID, 🇭🇰 , 🇭🇰
 ssid =SSID, Proxies, Proxies,Mr: direct,Mr_5G: direct
 static=Domestic, DIRECT, Proxies
 static=Scholar, DIRECT, Proxies
@@ -22,12 +22,8 @@ static=AsianTV, DIRECT, Proxies
 static=GlobalTV, Proxies, DIRECT
 static=Netflix, Proxies, DIRECT
 static=Spotify, Proxies, DIRECT
-static=Telegram, Proxies, DIRECT
-static=Steam, Proxies, DIRECT
 static=Speedtest, Proxies, DIRECT, Domestic
 static=PayPal, DIRECT, Proxies
-static=Microsoft, Proxies, DIRECT
-static=Netease Music, DIRECT, Proxies
 [server_remote]
 
 [filter_remote]
@@ -70,12 +66,8 @@ https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRl
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvVml1VFYubGlzdA&group=R2xvYmFsVFY, tag=GlobalTV, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvWW91VHViZSUyME11c2ljLmxpc3Q&group=R2xvYmFsVFY, tag=GlobalTV, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvWW91VHViZS5saXN0&group=R2xvYmFsVFY, tag=GlobalTV, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvVGVsZWdyYW0ubGlzdA&group=VGVsZWdyYW0, tag=Telegram, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvU3RlYW0ubGlzdA&group=U3RlYW0, tag=Steam, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvU3BlZWR0ZXN0Lmxpc3Q&group=U3BlZWR0ZXN0, tag=Speedtest, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUGF5UGFsLmxpc3Q&group=UGF5UGFs, tag=PayPal, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWljcm9zb2Z0Lmxpc3Q&group=TWljcm9zb2Z0, tag=Microsoft, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvTmV0ZWFzZSUyME11c2ljLmxpc3Q&group=TmV0ZWFzZSBNdXNpYw, tag=Netease Music, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvU3BlY2lhbC5saXN0&group=RElSRUNU, tag=DIRECT, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUHJveHkubGlzdA&group=UHJveGllcw, tag=Proxies, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvRG9tZXN0aWMubGlzdA&group=RG9tZXN0aWM, tag=Domestic, enabled=true
