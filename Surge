@@ -44,7 +44,6 @@ Proxy = select, 1, 2
 SSID = ssid, default = Proxies, "Mr" = DIRECT, "Mr_5G" = DIRECT
 Domestic = select, Direct, Proxies
 Others = select, Proxies, Direct
-AdBlock = select, Ad-Block, Direct, Proxies
 AsianTV = select, Direct, Proxies
 GlobalTV = select, Proxies, Direct
 Netease Music = select, Direct
@@ -60,7 +59,6 @@ YouTube = select, Proxies, Direct
 
 [Rule]
 # Rulesets
-RULE-SET,https://gitee.com/lhie1/Rules/raw/master/Surge/Surge%203/Provider/Reject.list,AdBlock
 RULE-SET,https://gitee.com/lhie1/Rules/raw/master/Surge/Surge%203/Provider/Special.list,DIRECT
 RULE-SET,https://gitee.com/lhie1/Rules/raw/master/Surge/Surge%203/Provider/Media/Netflix.list,Netflix
 RULE-SET,https://gitee.com/lhie1/Rules/raw/master/Surge/Surge%203/Provider/Media/Spotify.list,Spotify
@@ -210,8 +208,6 @@ amplifi.lan = server:syslib
 ^https?:\/\/newcz\.m\.jd\.com\/ https:\/\/newcz.m.jd.com\/ 302
 ^https?:\/\/p\.m\.jd\.com\/ https:\/\/p.m.jd.com\/ 302
 ^https?:\/\/so\.m\.jd\.com\/ https:\/\/so.m.jd.com\/ 302
-^https?:\/\/union\.click\.jd\.com\/jda? http:\/\/union.click.jd.com\/jda?adblock= header
-^https?:\/\/union\.click\.jd\.com\/sem.php? http:\/\/union.click.jd.com\/sem.php?adblock= header
 ^https?:\/\/www.jd.com\/ https:\/\/www.jd.com\/ 302
 # > Wiki
 # ^https:\/\/zh.(m.)?wikipedia.org\/zh(-\w*)?(?=\/) https:\/\/www.wikiwand.com\/zh$2 302
@@ -780,7 +776,6 @@ http?:\/\/123.59.30.10\/adv\/advInfos - reject
 ^https?:\/\/overseas.weico.cc\/portal.php\?a=get_coopen_ads - reject
 ^https?:\/\/player.hoge.cn\/advertisement.swf - reject
 ^https?:\/\/ress.dxpmedia.com\/appicast\/ - reject
-^https?:\/\/s3.pstatp.com\/inapp\/TTAdblock.css - reject
 ^https?:\/\/sdk.99shiji.com\/ad\/ - reject
 ^https?:\/\/statc.mytuner.mobi\/media\/banners\/ - reject
 ^https?:\/\/static.cnbetacdn.com\/assets\/adv - reject
