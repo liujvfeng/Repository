@@ -30,6 +30,8 @@ static=Microsoft, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koo
 static=Netease Music, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png
 
 [server_remote]
+https://nnn3ro.link/link/LNKnPITAqTaqMRj3?sub=1, tag=Test, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/rix.png, update-interval=86400, opt-parser=false, enabled=true
+https://nnn3ro.link/link/LNKnPITAqTaqMRj3?sub=1, tag=Test, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/rix.png, update-interval=86400, opt-parser=false, enabled=true
 
 [filter_remote]
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RpbmR5MjAxMy9zdWJjb252ZXJ0ZXIvbWFzdGVyL2Jhc2UvcnVsZXMvTG9jYWxBcmVhTmV0d29yay5saXN0&group=RElSRUNU, tag=DIRECT, enabled=true
