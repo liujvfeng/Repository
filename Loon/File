@@ -1,0 +1,95 @@
+[General]
+allow-udp-proxy=false
+bypass-tun=10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.18.0.0/15,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+dns-server=system,119.29.29.29,223.5.5.5
+host=127.0.0.1
+skip-proxy=192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+
+[Proxy]
+
+[Remote Proxy]
+
+[Proxy Group]
+Proxies = select,Auto - UrlTest,DIRECT
+SSID = ssid,default = Proxies, cellular = Proxies, "Mr" = DIRECT, "Mr_5G" = DIRECTDomestic = select,DIRECT,Proxies
+Scholar = select,DIRECT,Proxies
+Others = select,Proxies,DIRECT
+AdBlock = select,REJECT,DIRECT,Proxies
+Apple = select,DIRECT,Proxies
+AsianTV = select,DIRECT,Proxies
+GlobalTV = select,Proxies,DIRECT
+Netflix = select,Proxies,DIRECT
+Spotify = select,Proxies,DIRECT
+Telegram = select,Proxies,DIRECT
+Steam = select,Proxies,DIRECT
+Speedtest = select,Proxies,DIRECT,Domestic
+PayPal = select,DIRECT,Proxies
+Microsoft = select,Proxies,DIRECT
+Netease Music = select,DIRECT,Proxies
+
+[Rule]
+GEOIP,CN,DIRECT
+FINAL,Others
+
+[Remote Rule]
+https://raw.githubusercontent.com/tindy2013/subconverter/master/base/rules/LocalAreaNetwork.list,DIRECT
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Scholar.list,Scholar
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list,AdBlock
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list,Netflix
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Spotify.list,Spotify
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Bilibili.list,AsianTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/iQiyi.list,AsianTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Letv.list,AsianTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/MOO.list,AsianTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Tencent%20Video.list,AsianTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Youku.list,AsianTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/ABC.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Abema%20TV.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Amazon.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Apple%20News.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Apple%20TV.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Bahamut.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/BBC%20iPlayer.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/DAZN.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Disney%20Plus.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/encoreTVB.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Fox%20Now.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Fox%2B.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/HBO.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Hulu%20Japan.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Hulu.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Japonx.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/JOOX.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/KKBOX.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Line%20TV.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/myTV%20SUPER.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netflix.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Pandora.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/PBS.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Pornhub.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Soundcloud.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/ViuTV.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/YouTube%20Music.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/YouTube.list,GlobalTV
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Telegram.list,Telegram
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Steam.list,Steam
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Speedtest.list,Speedtest
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/PayPal.list,PayPal
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Microsoft.list,Microsoft
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Media/Netease%20Music.list,Netease Music
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Special.list,DIRECT
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Proxy.list,Proxies
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Domestic.list,Domestic
+https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Apple.list,Apple
+
+[URL Rewrite]
+enable=true
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+
+[Remote Rewrite]
+https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Rewrite/AutoRewrite_Example.list,auto
+
+[MITM]
+enable=true
+hostname=*.example.com,*.sample.com
+skip-server-cert-verify=true
