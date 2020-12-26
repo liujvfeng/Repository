@@ -12,23 +12,22 @@ server=1.0.0.1
 server=8.8.8.8
 
 [policy]
-static=Proxies, SSID, 🇭🇰 , 🇭🇰
-ssid =SSID, Proxies, Proxies,Mr: direct,Mr_5G: direct
-static=Domestic, DIRECT, Proxies
-static=Scholar, DIRECT, Proxies
-static=Others, Proxies, DIRECT
-static=AdBlock, REJECT, DIRECT
-static=Apple, DIRECT, Proxies
-static=AsianTV, DIRECT, Proxies
-static=GlobalTV, Proxies, DIRECT
-static=Netflix, Proxies, DIRECT
-static=Telegram, Proxies, DIRECT
-static=Spotify, Proxies, DIRECT
-static=Steam, Proxies, DIRECT
-static=Speedtest, Proxies, DIRECT, Domestic
-static=PayPal, DIRECT, Proxies
-static=Microsoft, Proxies, DIRECT
-static=Netease Music, DIRECT, Proxies
+static=Proxies, SSID, 🇭🇰 , 🇭🇰, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
+ssid =SSID, Proxies, Proxies,Mr: direct,Mr_5G: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+static=Domestic, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Domestic.png
+static=Others, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
+static=AdBlock, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AdBlack.png
+static=Apple, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=AsianTV, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
+static=GlobalTV, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
+static=Netflix, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix.png
+static=Telegram, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=Spotify, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png
+static=Steam, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
+static=Speedtest, Proxies, DIRECT, Domestic, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
+static=PayPal, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PayPal.png
+static=Microsoft, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
+static=Netease Music, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png
 
 [server_remote]
 
@@ -84,11 +83,8 @@ https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRl
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvQXBwbGUubGlzdA&group=QXBwbGU, tag=Apple, enabled=true
 	
 [rewrite_remote]
-https://gitee.com/bp233/script/raw/master/TikTok.quanx, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
-https://gitee.com/bp233/script/raw/master/YouTubeADS.quanx, tag=YouTube, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/liujvfeng/link/main/Loon/TikTok, tag=TikTok, update-interval=86400, opt-parser=true, enabled=true
 https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=Boxjs, update-interval=86400, opt-parser=false, enabled=true
-https://gitee.com/bp233/script/raw/master/General.conf, tag=Rewrite, update-interval=86400, opt-parser=false, enabled=true
-https://gitee.com/bp233/script/raw/master/Abdlook.conf, tag=Adve, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
 
