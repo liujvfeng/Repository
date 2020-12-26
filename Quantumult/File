@@ -23,8 +23,8 @@ static=GlobalTV, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Kool
 static=Netflix, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix.png
 static=Telegram, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
 static=Spotify, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Spotify.png
-static=Steam, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
-static=Speedtest, Proxies, DIRECT, Domestic, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
+static=Steam, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Game.png
+static=Speedtest, Proxies, DIRECT, Domestic, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Speedtest.png
 static=PayPal, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PayPal.png
 static=Microsoft, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
 static=Netease Music, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png
@@ -33,7 +33,6 @@ static=Netease Music, DIRECT, Proxies, img-url=https://raw.githubusercontent.com
 
 [filter_remote]
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RpbmR5MjAxMy9zdWJjb252ZXJ0ZXIvbWFzdGVyL2Jhc2UvcnVsZXMvTG9jYWxBcmVhTmV0d29yay5saXN0&group=RElSRUNU, tag=DIRECT, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0RpdmluZUVuZ2luZS9Qcm9maWxlcy9tYXN0ZXIvU3VyZ2UvUnVsZXNldC9FeHRyYS9TY2hvbGFyLmxpc3Q&group=U2Nob2xhcg, tag=Scholar, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUmVqZWN0Lmxpc3Q&group=QWRCbG9jaw, tag=AdBlock, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvTmV0ZmxpeC5saXN0&group=TmV0ZmxpeA, tag=Netflix, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvU3BvdGlmeS5saXN0&group=U3BvdGlmeQ, tag=Spotify, enabled=true
