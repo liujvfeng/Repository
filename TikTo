@@ -1,6 +1,0 @@
-(?<=&mcc_mnc=)4 url 307 2
-^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ url reject-img
-^https?:\/\/api\d?\.tiktokv\.com\/api\/ad\/ url reject-img
-^https?:\/\/cdn\.tiku\.zhan\.com\/banner url reject-img
-(^https?:\/\/[\w-]+\.tiktokv.com\/.+&.+)(\d{2}\.3\.\d)(.+) url 307 $118.0$3
-hostname = *.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com
