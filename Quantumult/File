@@ -18,7 +18,7 @@ static=Domestic, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Kool
 static=Others, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
 static=AdBlock, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AdBlack.png
 static=Apple, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
-static=AsianTV, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
+static=AsianTV, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/WeTV.png
 static=GlobalTV, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
 static=Netflix, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix.png
 static=Telegram, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
