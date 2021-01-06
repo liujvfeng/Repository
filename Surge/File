@@ -38,9 +38,8 @@ Ad-GIF = reject-tinygif
 
 
 [Proxy Group]
-Proxy = select, SSID, Select
-Select = url-test, url=http://www.gstatic.com/generate_204, interval=300
-SSID = ssid, default = Select, "Mr" = DIRECT, "Mr_5G" = DIRECT
+Proxy = select, SSID
+SSID = ssid, default = Proxy, "Mr" = DIRECT, "Mr_5G" = DIRECT
 Domestic = select, Direct, Proxy
 Others = select, Proxy, Direct
 AdBlock = select, Ad-Block, Direct, Proxy
