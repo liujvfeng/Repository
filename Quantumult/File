@@ -13,7 +13,7 @@ server=8.8.8.8
 
 [policy]
 static=Proxies, SSID, Select , img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
-ssid =SSID, Proxies, Proxies,Mr: direct,Mr_5G: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+ssid =SSID, Select, Select,Mr: direct,Mr_5G: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
 static=Select, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
 static=Domestic, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Domestic.png
 static=Others, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
