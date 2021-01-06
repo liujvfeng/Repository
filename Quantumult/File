@@ -14,6 +14,7 @@ server=8.8.8.8
 [policy]
 static=Proxies, SSID, 🇭🇰 , 🇭🇰, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
 ssid =SSID, Proxies, Proxies,Mr: direct,Mr_5G: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+static=Select, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
 static=Domestic, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Domestic.png
 static=Others, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
 static=AdBlock, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/AdBlack.png
@@ -27,7 +28,6 @@ static=Steam, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson
 static=Speedtest, Proxies, DIRECT, Domestic, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Speedtest.png
 static=PayPal, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/PayPal.png
 static=Microsoft, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
-static=Netease Music, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netease_Music_Unlock.png
 
 [server_remote]
 
@@ -75,7 +75,6 @@ https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRl
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvU3BlZWR0ZXN0Lmxpc3Q&group=U3BlZWR0ZXN0, tag=Speedtest, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUGF5UGFsLmxpc3Q&group=UGF5UGFs, tag=PayPal, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWljcm9zb2Z0Lmxpc3Q&group=TWljcm9zb2Z0, tag=Microsoft, enabled=true
-https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvTWVkaWEvTmV0ZWFzZSUyME11c2ljLmxpc3Q&group=TmV0ZWFzZSBNdXNpYw, tag=Netease Music, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvU3BlY2lhbC5saXN0&group=RElSRUNU, tag=DIRECT, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUHJveHkubGlzdA&group=UHJveGllcw, tag=Proxies, enabled=true
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvRG9tZXN0aWMubGlzdA&group=RG9tZXN0aWM, tag=Domestic, enabled=true
