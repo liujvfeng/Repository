@@ -13,8 +13,8 @@ socks5-listen = 0.0.0.0:8889
 wifi-access-http-port = 8888
 wifi-access-socks5-port = 8889
 external-controller-access = lhie1@0.0.0.0:6170
-internet-test-url = http://www.gstatic.com/generate_204
-proxy-test-url = http://www.gstatic.com/generate_204
+internet-test-url = http://wifi.vivo.com.cn/generate_204
+proxy-test-url = http://cp.cloudflare.com/generate_204
 test-timeout = 5
 allow-wifi-access = true
 exclude-simple-hostnames = true
@@ -54,6 +54,8 @@ Telegram = select, Proxy, Direct
 Speedtest = select, Proxy, Direct
 Apple = select, Proxy, Direct
 YouTube = select, Proxy, Direct
+Disney = select, Proxy, Direct
+Scholar = select, Proxy, Direct
 
 [Rule]
 # Rulesets
@@ -106,6 +108,8 @@ RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider
 RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Apple.list,Apple
 RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Domestic.list,Domestic
 RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Domestic%20IPs.list,Domestic
+RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Scholar.list,Scholar
+RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Disney%20Plus.list,Disney
 RULE-SET,LAN,DIRECT
 GEOIP,CN,Domestic
 FINAL,Others,dns-failed
