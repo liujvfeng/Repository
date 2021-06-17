@@ -12,8 +12,7 @@ server=1.0.0.1
 server=8.8.8.8
 
 [policy]
-static=Proxies, SSID, Select , img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
-ssid =SSID, Select, Select,Mr: direct,Mr_5G: direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/SSID.png
+static=Proxies, Select , img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/VirMach.png
 static=Select, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Available.png
 static=Domestic, DIRECT, Proxies, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Domestic.png
 static=Others, Proxies, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Static.png
@@ -81,8 +80,6 @@ https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRl
 https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvQXBwbGUubGlzdA&group=QXBwbGU, tag=Apple, enabled=true
 	
 [rewrite_remote]
-https://raw.githubusercontent.com/liujvfeng/link/main/Surge/TikTokUS, tag=TikTok, update-interval=86400, opt-parser=true, enabled=true
-https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.tf.conf, tag=Boxjs, update-interval=86400, opt-parser=false, enabled=true
 
 [server_local]
 
