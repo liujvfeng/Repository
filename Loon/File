@@ -99,7 +99,6 @@ https://raw.githubusercontent.com/Loon0x00/LoonExampleConfig/master/Rewrite/Auto
 enable = false
 [Remote Script]
 [Plugin]
-https://raw.githubusercontent.com/liujvfeng/link/main/Loon/TikTokUS, tag=TikTokUS, enabled=true
 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Loon.plugin, tag=Sub-Store, enabled=true
 [MITM]
 enable = false
