@@ -38,13 +38,12 @@ Ad-GIF = reject-tinygif
 
 [Proxy Group]
 Proxy = select, Urltest, Direct
-Urltest = select, Proxy, Direct
+Urltest = url-test, Direct, no-alert=0, hidden=0
 Domestic = select, Direct, Proxy
 Others = select, Proxy, Direct
 AdBlock = select, Ad-Block, Direct, Proxy
 AsianTV = select, Direct, Proxy
 GlobalTV = select, Proxy, Direct
-Netease Music = select, Direct
 Microsoft = select, Proxy, Direct
 Steam = select, Proxy, Direct
 Netflix = select, Proxy, Direct
@@ -56,6 +55,7 @@ Apple = select, Proxy, Direct
 YouTube = select, Proxy, Direct
 Disney = select, Proxy, Direct
 Scholar = select, Proxy, Direct
+Netease Music = select, Direct
 
 [Rule]
 # Rulesets
