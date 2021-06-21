@@ -38,7 +38,7 @@ Ad-GIF = reject-tinygif
 
 [Proxy Group]
 Proxy = select, Urltest, Direct
-Urltest = url-test, Direct, no-alert=0, hidden=0
+Urltest = url-test, no-alert=0, hidden=0
 Domestic = select, Direct, Proxy
 Others = select, Proxy, Direct
 AdBlock = select, Ad-Block, Direct, Proxy
