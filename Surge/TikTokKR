@@ -3,7 +3,6 @@
 
 [URL Rewrite]
 #tiktok解锁直播区域限制
-#tiktok解锁直播区域限制
 [URL Rewrite]
 CN KR 307
 (^h.+v5\/)(.+) $1 302
