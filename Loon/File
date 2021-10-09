@@ -16,7 +16,7 @@ skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashly
 [Remote Proxy]
 
 [Proxy Group]
-Proxies = select,Select,DIRECT
+Proxies = select,Urltest,DIRECT
 Urltest = url-test,REJECT,url = http://www.gstatic.com/generate_204,interval = 300
 Scholar = select,DIRECT,Proxies
 Others = select,Proxies,DIRECT
