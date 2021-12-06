@@ -1,0 +1,10 @@
+#!name=TikTok TW
+#!desc=TikTok Unlock
+
+# TikTok Internation
+(.*video_id=\w{32})(.*watermark=)(.*) $1 302
+(?<=(carrier|account|sys|sim)_region=)CN JP 307
+
+[MITM]
+hostname = api*.tiktokv.co
+
