@@ -1,9 +1,7 @@
 [General]
-bypass-system = true
 loglevel = notify
-replica = false
 dns-server = system, 119.29.29.29, 223.5.5.5, 223.6.6.6
-skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, *.crashlytics.com, *.edu.cn
+skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local, *.crashlytics.com, *.edu.cn, *.evernote.com, *.yinxiang.com
 tun-excluded-routes = 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12
 tun-included-routes = 192.168.1.12/32
 always-real-ip = *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com
@@ -14,7 +12,7 @@ wifi-access-http-port = 8888
 wifi-access-socks5-port = 8889
 external-controller-access = lhie1@0.0.0.0:6170
 internet-test-url = http://wifi.vivo.com.cn/generate_204
-proxy-test-url = http://cp.cloudflare.com/generate_204
+proxy-test-url = http://www.gstatic.com/generate_204
 test-timeout = 5
 allow-wifi-access = true
 exclude-simple-hostnames = true
@@ -23,11 +21,10 @@ network-framework = false
 show-error-page-for-reject = true
 tls-provider = default
 use-default-policy-if-wifi-not-primary = false
-# wifi-assist = true
 
 [Replica]
 hide-apple-request = true
-hide-crashlytics-request = true
+hide-crash-reporter-request = true
 hide-udp = false
 keyword-filter-type = false
 
@@ -37,79 +34,109 @@ Ad-Block = reject
 Ad-GIF = reject-tinygif
 
 [Proxy Group]
-Proxy = select, Urltest, Direct
-Urltest = url-test, no-alert=0, hidden=0
-Domestic = select, Direct, Proxy
-Others = select, Proxy, Direct
+Proxy = select, Urltest, Direct, update-interval=0, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Urltest = select, Direct, update-interval=0, no-alert=0, hidden=0, include-all-proxies=0
+Domestic = select, Direct, Proxy, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Others = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0
 AdBlock = select, Ad-Block, Direct, Proxy
-AsianTV = select, Direct, Proxy
-GlobalTV = select, Proxy, Direct
-Microsoft = select, Proxy, Direct
-Steam = select, Proxy, Direct
-Netflix = select, Proxy, Direct
-Spotify = select, Proxy, Direct
-PayPal = select, Proxy, Direct
-Telegram = select, Proxy, Direct
-Speedtest = select, Proxy, Direct
-Apple = select, Proxy, Direct
-YouTube = select, Proxy, Direct
-Disney = select, Proxy, Direct
-Scholar = select, Proxy, Direct
-Netease Music = select, Direct
+Asian TV = select, Direct, Proxy, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Global TV = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Netease Music = select, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Microsoft = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Steam = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Netflix = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Spotify = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+PayPal = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Telegram = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Speedtest = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Apple = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+YouTube = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Scholar = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Disney = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
 
 [Rule]
-# Rulesets
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Reject.list,AdBlock
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Special.list,DIRECT
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Netflix.list,Netflix
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Spotify.list,Spotify
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/YouTube%20Music.list,YouTube
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/YouTube.list,YouTube
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Bilibili.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/iQiyi.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Letv.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/MOO.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Netease%20Music.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Tencent%20Video.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Youku.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/WeTV.list,AsianTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/ABC.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Abema%20TV.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Amazon.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Apple%20News.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Apple%20TV.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Bahamut.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/BBC%20iPlayer.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/DAZN.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Disney%20Plus.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/encoreTVB.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Fox%20Now.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Fox%2B.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/HBO.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Hulu%20Japan.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Hulu.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Japonx.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/JOOX.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/KKBOX.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/KKTV.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Line%20TV.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/myTV%20SUPER.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Pandora.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/PBS.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Pornhub.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Soundcloud.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/ViuTV.list,GlobalTV
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Telegram.list,Telegram
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Steam.list,Steam
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Speedtest.list,Speedtest
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/PayPal.list,PayPal
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Microsoft.list,Microsoft
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Proxy.list,Proxy
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Apple.list,Apple
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Domestic.list,Domestic
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Domestic%20IPs.list,Domestic
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Scholar.list,Scholar
-RULE-SET,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Disney%20Plus.list,Disney
+# Client
+# > Proxy
+PROCESS-NAME,v2ray,DIRECT
+PROCESS-NAME,ss-local,DIRECT
+# > Download
+PROCESS-NAME,aria2c,DIRECT
+PROCESS-NAME,fdm,DIRECT
+PROCESS-NAME,Folx,DIRECT
+PROCESS-NAME,NetTransport,DIRECT
+PROCESS-NAME,Thunder,DIRECT
+PROCESS-NAME,Transmission,DIRECT
+PROCESS-NAME,uTorrent,DIRECT
+PROCESS-NAME,WebTorrent,DIRECT
+PROCESS-NAME,WebTorrent Helper,DIRECT
+# Unbreak
+# > General
+USER-AGENT,coffeecorp*,DIRECT
+USER-AGENT,restaurant-mobile*,DIRECT
+DOMAIN,app.adjust.com,DIRECT
+# > Google
+DOMAIN-SUFFIX,googletraveladservices.com,DIRECT
+DOMAIN,analyticsinsights-pa.googleapis.com,Proxy
+DOMAIN,analyticsreporting.googleapis.com,Proxy
+DOMAIN,dl.google.com,DIRECT
+DOMAIN,mtalk.google.com,DIRECT
+# > Tencent
+DOMAIN,livew.l.qq.com,DIRECT
+DOMAIN,vd.l.qq.com,DIRECT
+# > Strava
+DOMAIN,analytics.strava.com,DIRECT
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Netflix/Netflix.list,Netflix
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Spotify/Spotify.list,Spotify
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Netflix/Netflix.list,Disney
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/YouTube/YouTube.list,YouTube
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/YouTubeMusic/YouTubeMusic.list,YouTube
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/BiliBiliIntl/BiliBiliIntl.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/iQIYIIntl/iQIYIIntl.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/LeTV/LeTV.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/NetEaseMusic/NetEaseMusic.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/TencentVideo/TencentVideo.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Youku/Youku.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/WeTV/WeTV.list,Asian TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ABC/ABC.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/AbemaTV/AbemaTV.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Amazon/Amazon.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/AppleNews/AppleNews.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/AppleTV/AppleTV.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Bahamut/Bahamut.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/BBC/BBC.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/DAZN/DAZN.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/DiscoveryPlus/DiscoveryPlus.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/EncoreTVB/EncoreTVB.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/FOXNOW/FOXNOW.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/FOXPlus/FOXPlus.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/HBO/HBO.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/HBOAsia/HBOAsia.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/HBOHK/HBOHK.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/HBOUSA/HBOUSA.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Hulu/Hulu.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/HuluJP/HuluJP.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/HuluUSA/HuluUSA.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Japonx/Japonx.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/JOOX/JOOX.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/KKBOX/KKBOX.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/KKTV/KKTV.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/LineTV/LineTV.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/PBS/PBS.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/myTVSUPER/myTVSUPER.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/PandoraTV/PandoraTV.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Pandora/Pandora.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/SoundCloud/SoundCloud.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ViuTV/ViuTV.list,Global TV
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Telegram/Telegram.list,Telegram
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Steam/Steam.list,Steam
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Speedtest/Speedtest.list,Speedtest
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/PayPal/PayPal.list,PayPal
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Microsoft/Microsoft.list,Microsoft
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Apple/Apple.list,Apple
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Scholar/Scholar.list,Scholar
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/Proxy/Proxy.list,Proxy
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/China/China.list,Domestic
+RULE-SET,https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Surge/ChinaIPs/ChinaIPs.list,Domestic
 RULE-SET,LAN,DIRECT
 GEOIP,CN,Domestic
 FINAL,Others,dns-failed
@@ -157,6 +184,7 @@ amplifi.lan = server:syslib
 # > Redirect Google Service
 ^https?:\/\/(www.)?g\.cn https:\/\/www.google.com 302
 ^https?:\/\/(www.)?google\.cn https:\/\/www.google.com 302
+^https?:\/\/(www.)?google\.com\.\w+ https:\/\/www.google.com 302
 # > Redirect HTTP to HTTPS
 ^https?:\/\/(www.)?taobao\.com\/ https:\/\/www.taobao.com\/ 302
 ^https?:\/\/(www.)?jd\.com\/ https:\/\/www.jd.com\/ 302
@@ -227,14 +255,9 @@ amplifi.lan = server:syslib
 ^https?:\/\/m.qu.la\/stylewap\/js\/wap.js http:\/\/ogtre5vp0.bkt.clouddn.com\/qu_la_wap.js 302
 ^https?:\/\/m.yhd.com\/1\/\? http:\/\/m.yhd.com\/1\/?adbock= 302
 ^https?:\/\/n.mark.letv.com\/m3u8api\/ http:\/\/burpsuite.applinzi.com\/Interface header
-^https?:\/\/sqimg.qq.com\/ http:\/\/sqimg.qq.com\/ 302
 ^https?:\/\/static.m.ttkvod.com\/static_cahce\/index\/index.txt http:\/\/ogtre5vp0.bkt.clouddn.com\/Static\/TXT\/index.txt header
 ^https?:\/\/www.iqshw.com\/d\/js\/m http:\/\/burpsuite.applinzi.com\/Interface header
 ^https?:\/\/www.iqshw.com\/d\/js\/m http:\/\/rewrite.websocket.site:10\/Other\/Static\/JS\/Package.js? header
-# > TikTok Internation
-# (.*video_id=\w{32})(.*watermark=)(.*) url 302 $1
-# (?<=(carrier|sys)_region=)CN url 307 JP
-# (?<=version_code=)\d{1,}.\d{1}\.\d{1} url 307 8.0.0
 # > Anti_ISP_JavaScript_Injection
 ^https?:\/\/c.minisplat.cn - reject
 ^https?:\/\/c1.minisplat.cn - reject
@@ -791,3 +814,9 @@ http?:\/\/123.59.30.10\/adv\/advInfos - reject
 ^https?:\/\/wmedia-track.uc.cn - reject
 ^https?:\/\/www.ft.com\/__origami\/service\/image\/v2\/images\/raw\/https%3A%2F%2Fcreatives.ftimg.net%2Fads* - reject
 ^https?:\/\/www.lianbijr.com\/adPage\/ - reject
+
+[MITM]
+tcp-connection = true
+ca-passphrase = 186139
+ca-p12 = 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
+
