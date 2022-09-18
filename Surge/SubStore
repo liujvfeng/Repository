@@ -34,25 +34,24 @@ Ad-Block = reject
 Ad-GIF = reject-tinygif
 
 [Proxy Group]
-Proxy = select, Urltest, Direct, update-interval=0, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Urltest = fallback, Direct, update-interval=0, no-alert=0, hidden=0, include-all-proxies=0
-Domestic = select, Direct, Proxy, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Proxy = select, Direct, update-interval=0, no-alert=0, hidden=0, include-all-proxies=0
+Domestic = select, Direct, Proxy, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
 Others = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0
 AdBlock = select, Ad-Block, Direct, Proxy
-Asian TV = select, Direct, Proxy, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Global TV = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Netease Music = select, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Microsoft = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Steam = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Netflix = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Spotify = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-PayPal = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Telegram = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Speedtest = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Apple = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-YouTube = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Scholar = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
-Disney = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=Urltest
+Asian TV = select, Direct, Proxy, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Global TV = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Netease Music = select, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Microsoft = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Steam = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Netflix = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Spotify = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+PayPal = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Telegram = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Speedtest = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Apple = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+YouTube = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Scholar = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
+Disney = select, Proxy, Direct, no-alert=0, hidden=0, include-all-proxies=0, include-other-group=
 
 [Rule]
 # Client
