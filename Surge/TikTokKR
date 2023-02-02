@@ -1,3 +1,0 @@
-# TikTok Internation
-(.*video_id=\w{32})(.*watermark=)(.*) $1 302
-(?<=(carrier|account|sys|sim)_region=)CN JP 307
