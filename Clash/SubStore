@@ -26,6 +26,8 @@ proxy-groups:
     proxies:
       - DIRECT
       - Proxies
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
 
   - name: Scholar
     type: select
@@ -40,6 +42,8 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
 
   - name: AdBlock
     type: select
@@ -53,6 +57,8 @@ proxy-groups:
     proxies:
       - DIRECT
       - Proxies
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
 
   - name: AsianTV
     type: select
@@ -99,6 +105,8 @@ proxy-groups:
     proxies:
       - Proxies
       - DIRECT
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
 
   - name: Speedtest
     type: select
@@ -114,17 +122,24 @@ proxy-groups:
     proxies:
       - DIRECT
       - Proxies
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      
   - name: Microsoft
     type: select
     proxies:
       - Proxies
       - DIRECT
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
 
   - name: Netease Music
     type: select
     proxies:
       - DIRECT
       - Proxies
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
 
   - name: Auto - UrlTest
     type: url-test
