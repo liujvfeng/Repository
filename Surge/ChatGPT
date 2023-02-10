@@ -1,0 +1,6 @@
+# NAME: ChatGPT
+
+DOMAIN-SUFFIX,platform.openai.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,chat.openai.com
+USER-AGENT,ChatGPT*
